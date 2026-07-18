@@ -9,11 +9,11 @@ export interface ProjectData {
     | "Frontend"
     | "Backend"
   )[];
-  image?: string | null,
-  techStack: { directory: string; label: string }[];
+  image?: string | undefined,
+  techStack: { fileName: string; label: string }[];
   link: {
-    prototype: string;
-    sourceCode: string;
-    documentation?: string | null;
+    prototype?: string;
+    sourceCode?: string;
+    documentation?: string;
   };
 }

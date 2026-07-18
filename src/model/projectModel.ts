@@ -11,15 +11,22 @@ export class ProjectModel implements ProjectData {
     | "Frontend"
     | "Backend"
   )[];
-  readonly image?: string | null;
-  readonly techStack: { directory: string; label: string }[];
+  readonly image?: string | undefined;
+  readonly techStack: { fileName: string; label: string }[];
   readonly link: {
-    readonly prototype: string;
-    readonly sourceCode: string;
-    readonly documentation?: string | null;
+    readonly prototype?: string;
+    readonly sourceCode?: string;
+    readonly documentation?: string;
   };
 
-  constructor({ title, description, tags, image, techStack, link }: ProjectData) {
+  constructor({
+    title,
+    description,
+    tags,
+    image,
+    techStack,
+    link,
+  }: ProjectData) {
     this.title = title;
     this.description = description;
     this.tags = tags;

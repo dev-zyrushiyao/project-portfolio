@@ -49,7 +49,7 @@
 
 .typography-primary {
   font-family: "Epilogue", sans-serif;
-  letter-spacing: 3px;
+  letter-spacing: 1.3px;
 }
 
 .typography-secondary {
@@ -91,22 +91,56 @@
   background-color: green;
 }
 
-.project-content {
-  text-align: center;
-  background-color: silver;
-  padding: 80px 5%;
+.title-section {
+  padding: 80px 30px;
+}
+
+.title-section h2 {
+  text-align: left;
+  padding: 40px;
 }
 
 .project-container {
+  text-align: center;
   padding: 40px;
 }
 
 .project-item {
   display: inline-block;
+  width: 400px;
 }
 
-.project-type {
-  background-color: grey;
+.project-content {
+  text-align: center;
+  border-top: 3px solid #43474e;
+  background-color: #979595c4;
+}
+
+.project-info {
+  background-color: #eeeeee;
+  padding: 24px 6%;
+  box-shadow: 5px 60px 13px 2px #43474e;
+  height: 412px;
+}
+
+.project-techstack div {
+  background-color: rgb(207, 205, 205);
+}
+
+.project-link a {
+  background-color: #ffdd48;
+  border: 2px solid silver;
+}
+
+.project-tag-division {
+  border-top: 3px solid #43474e;
+  background-color: #ee1515;
+}
+
+.project-tag-type {
+  background-color: whitesmoke;
+  border-width: 2px;
+  border-color: #ffdd48;
   display: inline;
 }
 

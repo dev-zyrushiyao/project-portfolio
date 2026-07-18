@@ -22,7 +22,7 @@ function NavbarButton({ label, isActive, onClick }: NavbarButtonProps) {
 const NavBar = () => {
   const [isActive, setIsActive] = useState<null | string>("Projects");
 
-  const buttons: string[] = ["Projects", "Tech Stack", "About me"];
+  const buttons: string[] = ["Projects", "About me"];
 
   return (
     <>
