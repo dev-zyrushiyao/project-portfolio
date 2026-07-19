@@ -57,10 +57,6 @@
   font-family: "Baskervville", serif;
 }
 
-.hero-section {
-  background-color: pink;
-}
-
 .hero-image {
   position: relative;
 }
@@ -88,7 +84,7 @@
 }
 
 .nav-bar button:hover {
-  background-color: green;
+  background-color: rgb(2, 59, 2);
 }
 
 .title-section {
@@ -106,7 +102,7 @@
 }
 
 .project-item {
-  display: inline-block;
+  /* display: inline; */
   width: 400px;
 }
 
@@ -120,7 +116,9 @@
   background-color: #eeeeee;
   padding: 24px 6%;
   box-shadow: 5px 60px 13px 2px #43474e;
-  height: 412px;
+
+  box-sizing: border-box;
+  height: 436px;
 }
 
 .project-techstack div {
@@ -142,6 +140,15 @@
   border-width: 2px;
   border-color: #ffdd48;
   display: inline;
+}
+
+.about-content {
+  padding: 40px 7%;
+}
+
+footer {
+  background-color: #ffdd48;
+  color: #050505;
 }
 
 @theme inline {

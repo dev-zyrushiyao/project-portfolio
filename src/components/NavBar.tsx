@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Projects from "./Projects";
+import About from "./About";
 
 interface NavbarButtonProps {
   label: string;
@@ -22,13 +23,14 @@ function NavbarButton({ label, isActive, onClick }: NavbarButtonProps) {
 const NavBar = () => {
   const [isActive, setIsActive] = useState<null | string>("Projects");
 
-  const buttons: string[] = ["Projects", "About me"];
+  const buttons: string[] = ["Projects", "About"];
 
   return (
     <>
       <div className="nav-bar">
         {buttons.map((label) => (
           <NavbarButton
+            key={label}
             label={label}
             isActive={label === isActive}
             onClick={() => setIsActive(label)}
@@ -36,6 +38,7 @@ const NavBar = () => {
         ))}
       </div>
       {isActive === "Projects" && <Projects />}
+      {isActive === "About" && <About />}
     </>
   );
 };

@@ -3,7 +3,7 @@ import projectPlaceholder from "../assets/projects-img/project_placeholder.png";
 
 const projects: ProjectModel[] = [
   new ProjectModel({
-    title: "CWD Mobile App",
+    title: "CWD Android Mobile Application",
     description:
       "A mobile application that handles bill payments, support tickets, and bill history. A personal project submitted to Calamba Water District",
     tags: ["Mobile", "Frontend"],
@@ -24,58 +24,7 @@ const projects: ProjectModel[] = [
     },
   }),
   new ProjectModel({
-    title: "CWD Web App figma prototype",
-    description: "A reimagine modernize website of Calamba Water District",
-    tags: ["Mobile", "Web", "Frontend", "UI/UX Design"],
-    image: "project_cwd.png",
-    techStack: [
-      { fileName: "figma.png", label: "figma" },
-      { fileName: "material-design.png", label: "material design 3" },
-    ],
-    link: {
-      prototype:
-        "https://www.figma.com/proto/Nru7QVeWQy4c7FLex1a24d/Design-Project?node-id=1760-11157&p=f&viewport=-2389%2C-10259%2C0.16&t=H4KzBzwF0JfOQMM9-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1760%3A11157&show-proto-sidebar=1&page-id=124%3A136",
-      sourceCode: undefined,
-      documentation:
-        "https://www.behance.net/gallery/246885791/UIUX-Case-Study-CWD-Web-Mobile-Design-Concept",
-    },
-  }),
-  new ProjectModel({
-    title: "CWD Web App figma prototype",
-    description: "A reimagine modernize website of Calamba Water District",
-    tags: ["Mobile", "Web", "Frontend", "UI/UX Design"],
-    image: "project_cwd.png",
-    techStack: [
-      { fileName: "figma.png", label: "figma" },
-      { fileName: "material-design.png", label: "material design 3" },
-    ],
-    link: {
-      prototype:
-        "https://www.figma.com/proto/Nru7QVeWQy4c7FLex1a24d/Design-Project?node-id=1760-11157&p=f&viewport=-2389%2C-10259%2C0.16&t=H4KzBzwF0JfOQMM9-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1760%3A11157&show-proto-sidebar=1&page-id=124%3A136",
-      sourceCode: undefined,
-      documentation:
-        "https://www.behance.net/gallery/246885791/UIUX-Case-Study-CWD-Web-Mobile-Design-Concept",
-    },
-  }),
-  new ProjectModel({
-    title: "CWD Web App figma prototype",
-    description: "A reimagine modernize website of Calamba Water District",
-    tags: ["Mobile", "Web", "Frontend", "UI/UX Design"],
-    image: "project_cwd.png",
-    techStack: [
-      { fileName: "figma.png", label: "figma" },
-      { fileName: "material-design.png", label: "material design 3" },
-    ],
-    link: {
-      prototype:
-        "https://www.figma.com/proto/Nru7QVeWQy4c7FLex1a24d/Design-Project?node-id=1760-11157&p=f&viewport=-2389%2C-10259%2C0.16&t=H4KzBzwF0JfOQMM9-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1760%3A11157&show-proto-sidebar=1&page-id=124%3A136",
-      sourceCode: undefined,
-      documentation:
-        "https://www.behance.net/gallery/246885791/UIUX-Case-Study-CWD-Web-Mobile-Design-Concept",
-    },
-  }),
-  new ProjectModel({
-    title: "CWD Web App figma prototype",
+    title: "CWD Web Application Figma Prototype",
     description: "A reimagine modernize website of Calamba Water District",
     tags: ["Mobile", "Web", "Frontend", "UI/UX Design"],
     image: "project_cwd.png",
@@ -119,23 +68,24 @@ const Projects = () => {
       <div className="project-container flex flex-wrap gap-10 justify-center">
         {projects.map((project) => {
           return (
-            <div className="project-item outline-solid outline-black rounded-sm shrink-0 ">
+            <div
+              className="project-item h-fit outline-solid outline-black rounded-sm shrink-0"
+              key={project.title}
+            >
               <img
-                className="max-h-full max-w-full"
+                className="w-full h-auto object-cover "
                 src={getImage(false, project.image) ?? projectPlaceholder}
                 alt="Image of project"
                 title={project.title}
               />
 
               {/* Project Information */}
-              <div className="project-content ">
-                <div className="project-info p-2 flex flex-col gap-4">
+              <div className="project-content h-full">
+                <div className="project-info p-2 flex flex-col flex-1 gap-4 max-h-max">
                   <h3 className="text-3xl text-left typography-primary">
                     {project.title}
                   </h3>
-                  <p className="text-xl text-left typography-secondary">
-                    {project.description}
-                  </p>
+                  <p className="text-xl text-left">{project.description}</p>
 
                   <p className="text-left text-sm typography-primary">
                     Tech Stack:
@@ -145,7 +95,7 @@ const Projects = () => {
                       return (
                         // image
 
-                        <div className="rounded-md">
+                        <div className="rounded-md" key={stack.label}>
                           <img
                             className="size-12"
                             src={
@@ -153,7 +103,7 @@ const Projects = () => {
                               projectPlaceholder
                             }
                             alt={`image of ${stack.label}`}
-                            title={`${stack.label} logo`}
+                            title={stack.label}
                           />
                         </div>
                       );
@@ -161,7 +111,7 @@ const Projects = () => {
                   </div>
 
                   {/* project link */}
-                  <div className="project-link flex gap-4 p-2 justify-center typography-primary">
+                  <div className="project-link flex gap-4 p-1 justify-center typography-primary">
                     {project.link.prototype && (
                       <a
                         className="p-2 flex items-center rounded-md"
@@ -200,7 +150,10 @@ const Projects = () => {
                 <div className="project-tag-division p-2 flex flex-wrap justify-start gap-3 typography-primary">
                   {project.tags.map((tag) => {
                     return (
-                      <div className="project-tag-type text-sm p-2 rounded-3xl">
+                      <div
+                        className="project-tag-type text-sm p-2 rounded-3xl"
+                        key={tag}
+                      >
                         {tag}
                       </div>
                     );
