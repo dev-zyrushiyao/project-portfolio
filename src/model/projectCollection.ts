@@ -6,7 +6,7 @@ const projects: ProjectModel[] = [
     description:
       "A mobile application that handles bill payments, support tickets, and bill history. A personal project submitted to Calamba Water District",
     tags: ["Mobile", "Frontend"],
-    image: "project_cwd.png",
+    image: "project_cwd_app.png",
     techStack: [
       { fileName: "flutter.png", label: "flutter" },
       { fileName: "figma.png", label: "figma" },
@@ -26,7 +26,7 @@ const projects: ProjectModel[] = [
     title: "CWD Web Application Figma Prototype",
     description: "A reimagine modernize website of Calamba Water District",
     tags: ["Mobile", "Web", "Frontend", "UI/UX Design"],
-    image: "project_cwd.png",
+    image: "project_cwd_web.png",
     techStack: [
       { fileName: "figma.png", label: "figma" },
       { fileName: "material-design.png", label: "material design 3" },
@@ -44,7 +44,7 @@ const projects: ProjectModel[] = [
     description:
       "Completed Net Ninja's HTML & CSS foundational crash course to solidify core web styling and responsive layout practices.",
     tags: ["Mobile", "Web", "Frontend"],
-    image: "mario.jpg",
+    image: "project_mario.jpg",
     techStack: [
       { fileName: "html.png", label: "html" },
       { fileName: "css.png", label: "css" },
@@ -96,7 +96,7 @@ const projects: ProjectModel[] = [
     techStack: [
       { fileName: "react.png", label: "react" },
       { fileName: "typescript.png", label: "typescript" },
-      { fileName: "css.png", label: "css" },
+      { fileName: "tailwind.png", label: "tailwind" },
     ],
     link: {
       prototype: "https://dev-zyrushiyao.github.io/project-portfolio/",
