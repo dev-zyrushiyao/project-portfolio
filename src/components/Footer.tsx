@@ -35,9 +35,7 @@ export default function Footer() {
             return (
               <li>
                 {data === "zyrushiyao@gmail.com" && (
-                  <a href={`mailto:${data}`} target="_blank">
-                    {data}
-                  </a>
+                  <a href={`mailto:${data}`}>{data}</a>
                 )}
                 {data === "LinkedIn" && (
                   <a

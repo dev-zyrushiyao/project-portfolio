@@ -62,7 +62,9 @@ const About = () => {
           </h3>
           <ul className="typography-secondary text-xl">
             <li>
-              <a href="https://github.com/dev-zyrushiyao">GitHub</a>
+              <a href="https://github.com/dev-zyrushiyao" target="_blank">
+                GitHub
+              </a>
             </li>
             <li>
               <a href="https://www.behance.net/zyrushiyao" target="_blank">
