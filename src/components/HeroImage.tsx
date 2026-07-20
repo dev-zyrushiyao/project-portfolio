@@ -14,13 +14,13 @@ const HeroImage = () => {
         </h1>
         <p
           id="main-role"
-          className="lg:text-5xl md:text-4xl text-3xl  typography-primary"
+          className="lg:text-5xl md:text-4xl text-3xl  typography-secondary"
         >
           Frontend Developer
         </p>
         <p
           id="sub-role"
-          className="lg:text-2xl md:text-xl text-lg typography-primary"
+          className="lg:text-2xl md:text-xl text-lg typography-secondary"
         >
           UI/UX Designer
         </p>
