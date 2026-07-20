@@ -5,19 +5,15 @@ import type { ProjectModel } from "@/model/projectModel";
 const projects: ProjectModel[] = projectCollection;
 
 function getImage(isTechstack: boolean, imgPath?: string): string | undefined {
-  let IMGDIR: string;
-
   if (imgPath == undefined) {
     return undefined;
   }
 
   if (isTechstack) {
-    IMGDIR = "../assets/techstack-img/";
+    return new URL(`../assets/techstack-img/${imgPath}`, import.meta.url).href;
   } else {
-    IMGDIR = "../assets/projects-img/";
+    return new URL(`../assets/projects-img/${imgPath}`, import.meta.url).href;
   }
-
-  return new URL(IMGDIR + imgPath, import.meta.url).href;
 }
 
 const Projects = () => {
