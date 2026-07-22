@@ -276,17 +276,17 @@ footer {
     top: 10%;
     left: 40%;
   }
+}
 
-  @media (max-width: 920px) {
-    .hero-content {
-      position: static;
-      gap: 4px;
-    }
+@media (max-width: 920px) {
+  .hero-content {
+    position: static;
+    gap: 4px;
   }
+}
 
-  @media (max-width: 500px) {
-    .hero-content {
-      text-align: center;
-    }
+@media (max-width: 500px) {
+  .hero-content {
+    text-align: center;
   }
 }
