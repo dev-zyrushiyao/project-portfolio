@@ -33,10 +33,11 @@ const About = () => {
             Tech Stack:
           </h3>
           <ul className="typography-secondary text-xl">
+            <li>GSAP</li>
+            <li>Typescript - React</li>
             <li>UI/UX - Figma</li>
             <li>Dart - Flutter</li>
-            <li>Typescript - React</li>
-            <li>Java </li>
+            <li>Java</li>
             <li>HTML - CSS - JS</li>
           </ul>
         </div>
@@ -45,6 +46,7 @@ const About = () => {
             Certificates:
           </h3>
           <ol className="typography-secondary text-xl">
+            <li>GSAP 3 Express</li>
             <li>
               DTI Laguna x Google Certificate Program - Google UX Design
               [Coursera] (July 8, 2025)
