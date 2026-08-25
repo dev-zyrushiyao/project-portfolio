@@ -136,7 +136,7 @@ const projects: ProjectModel[] = [
       { fileName: "gsap.jpg", label: "gsap" },
     ],
     link: {
-      prototype: undefined,
+      prototype: "https://dev-zyrushiyao.github.io/gsap-animation-sample/",
       sourceCode: "https://github.com/dev-zyrushiyao/gsap-animation-sample",
       documentation: undefined,
     },
