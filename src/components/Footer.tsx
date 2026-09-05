@@ -23,7 +23,7 @@ export default function Footer() {
         <h4 className="typography-primary text-3xl">About</h4>
         <ul className="typography-secondary text-xl flex flex-col gap-3">
           {about.map((data) => {
-            return <li>{data}</li>;
+            return <li key={data}>{data}</li>;
           })}
         </ul>
       </div>
@@ -33,7 +33,7 @@ export default function Footer() {
         <ul className="typography-secondary text-xl flex flex-col gap-3">
           {contact.map((data) => {
             return (
-              <li>
+              <li key={data}>
                 {data === "zyrushiyao@gmail.com" && (
                   <a href={`mailto:${data}`}>{data}</a>
                 )}
@@ -55,7 +55,7 @@ export default function Footer() {
         <h4 className="typography-primary text-3xl">Skills</h4>
         <ul className="typography-secondary text-xl flex flex-col gap-3">
           {skills.map((data) => {
-            return <li>{data}</li>;
+            return <li key={data}>{data}</li>;
           })}
         </ul>
       </div>

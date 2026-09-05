@@ -1,4 +1,5 @@
 import blogPost from "./project-works/BlogPost";
+import colorClonePlayground from "./project-works/ColorClonePlayground";
 import cwdAndroid from "./project-works/CWD-Android";
 import cwdFigma from "./project-works/CWD-Figma";
 import dojoHelpdesk from "./project-works/DojoHelpdesk";
@@ -20,5 +21,6 @@ projects.push(projectPortfolio);
 projects.push(dojoHelpdesk);
 projects.push(gsapSketchpad);
 projects.push(drawingApp);
+projects.push(colorClonePlayground);
 
 export default projects.reverse();
