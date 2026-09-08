@@ -1,3 +1,4 @@
+
 import backgroundImage from "../assets/hero-image.png";
 
 const HeroImage = () => {
@@ -8,22 +9,10 @@ const HeroImage = () => {
         alt="pikachu hero-image"
         src={backgroundImage}
       />
-      <div className="hero-content flex flex-col gap-4">
-        <h1 className="lg:text-7xl md:text-6xl text-5xl typography-primary">
-          Zyrus Hiyao
-        </h1>
-        <p
-          id="main-role"
-          className="lg:text-5xl md:text-4xl text-3xl  typography-secondary"
-        >
-          Frontend Developer
-        </p>
-        <p
-          id="sub-role"
-          className="lg:text-2xl md:text-xl text-lg typography-secondary"
-        >
-          UI/UX Designer
-        </p>
+      <div className="hero-content">
+        <h1>Zyrus Hiyao</h1>
+        <p>Frontend Developer</p>
+        <p>UI/UX Designer</p>
       </div>
     </div>
   );

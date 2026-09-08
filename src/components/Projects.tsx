@@ -19,20 +19,18 @@ function getImage(isTechstack: boolean, imgPath?: string): string | undefined {
 const Projects = () => {
   return (
     <div className="title-section">
-      <h2 className="lg:text-6xl md:text-5xl text-4xl typography-primary">
-        Project list
-      </h2>
+      <h2>Project list</h2>
       <hr />
       <div className="project-container flex flex-wrap gap-10 justify-center">
         {projects.map((project) => {
           return (
             <div
-              className="project-item h-fit outline-solid outline-black rounded-sm shrink-0"
+              className="project-item flex flex-col outline-solid outline-black rounded-sm shrink-0 h-162.5 w-100"
               key={project.title}
             >
               <div className="image-container w-full h-50">
                 <img
-                  className="w-full h-full object-fill "
+                  className="w-full h-full object-cover "
                   src={getImage(false, project.image) ?? projectPlaceholder}
                   alt="Image of project"
                   title={project.title}
@@ -40,8 +38,8 @@ const Projects = () => {
               </div>
 
               {/* Project Information */}
-              <div className="project-content h-full">
-                <div className="project-info p-2 flex flex-col flex-1 gap-4 h-max">
+              <div className="project-content flex flex-1 flex-col min-h-0">
+                <div className="project-info p-2 flex flex-1 flex-col h-full gap-4">
                   <h3 className="text-3xl text-left typography-primary">
                     {project.title}
                   </h3>
@@ -54,8 +52,10 @@ const Projects = () => {
                     {project.techStack.map((stack) => {
                       return (
                         // image
-
-                        <div className="rounded-md" key={stack.label}>
+                        <div
+                          className="rounded-md overflow-clip"
+                          key={stack.label}
+                        >
                           <img
                             className="size-12"
                             src={
@@ -107,7 +107,7 @@ const Projects = () => {
                   </div>
                 </div>
 
-                <div className="project-tag-division p-2 flex flex-wrap justify-start gap-3 typography-secondary">
+                <div className="project-tag-division p-2 flex h-fit flex-wrap justify-start gap-3 typography-secondary">
                   {project.tags.map((tag) => {
                     return (
                       <div

@@ -27,7 +27,7 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="nav-bar">
+      <div className="nav-bar text-white">
         {buttons.map((label) => (
           <NavbarButton
             key={label}

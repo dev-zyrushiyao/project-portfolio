@@ -4,6 +4,7 @@ import cwdAndroid from "./project-works/CWD-Android";
 import cwdFigma from "./project-works/CWD-Figma";
 import dojoHelpdesk from "./project-works/DojoHelpdesk";
 import drawingApp from "./project-works/DrawingApp";
+import easeVisualizer from "./project-works/EaseVisualizer";
 import gsapSketchpad from "./project-works/GsapSketchpad";
 import marioClub from "./project-works/MarioClub";
 import projectPortfolio from "./project-works/ProjectPortfolio";
@@ -22,5 +23,6 @@ projects.push(dojoHelpdesk);
 projects.push(gsapSketchpad);
 projects.push(drawingApp);
 projects.push(colorClonePlayground);
+projects.push(easeVisualizer);
 
 export default projects.reverse();

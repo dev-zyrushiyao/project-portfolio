@@ -1,3 +1,44 @@
+const certificates: string[] = [
+  "Software Development Online Part-Time Accelerated - JAVA [Coding Dojo](2023)",
+  "DTI Laguna x Google Certificate Program - Google UX Design[Coursera] (2025)",
+  "UXPH Mini 2025: Manila Conference (2025)",
+  "The No-Code Creative : Figma for Talents and Local Business (2026)",
+  "GSAP 3 Express (2026)",
+];
+
+const otherCertificates: string[] = [
+  "Analog System & Digital Console Mixing Master Class[Sound Tech Institute of the Philippines(2019)",
+  "Caregiving NC2 (Calamba Doctors' College) (2024)",
+];
+
+const hobbies: string[] = [
+  "Playing Guitar",
+  "Listening to music",
+  "Playing rhythm games",
+  "Reading",
+];
+
+const techStack: string[] = [
+  "GSAP",
+  "Typescript - React",
+  "UI/UX - Figma",
+  "Dart - Flutter",
+  "Java",
+  "HTML - CSS - JS",
+];
+
+type ContactAndLink = { platform: string; address: string };
+
+const links: ContactAndLink[] = [
+  { platform: "Github", address: "https://github.com/dev-zyrushiyao" },
+  { platform: "Behance", address: "https://www.behance.net/zyrushiyao" },
+];
+
+const contacts: ContactAndLink[] = [
+  { platform: "Email", address: "mailto:zyrushiyao@gmail.com" },
+  { platform: "LinkedIn", address: "https://www.linkedin.com/in/zyrus-hiyao/" },
+];
+
 const About = () => {
   return (
     <div className="title-section">
@@ -22,10 +63,9 @@ const About = () => {
             Hobbies:
           </h3>
           <ul className="typography-secondary text-xl">
-            <li>Playing Guitar</li>
-            <li>Listening to music</li>
-            <li>Playing rhythm games</li>
-            <li>Reading</li>
+            {hobbies.map((hobby) => {
+              return <li key={hobby}>{hobby}</li>;
+            })}
           </ul>
         </div>
         <div className="about-content flex flex-col gap-3">
@@ -33,46 +73,43 @@ const About = () => {
             Tech Stack:
           </h3>
           <ul className="typography-secondary text-xl">
-            <li>GSAP</li>
-            <li>Typescript - React</li>
-            <li>UI/UX - Figma</li>
-            <li>Dart - Flutter</li>
-            <li>Java</li>
-            <li>HTML - CSS - JS</li>
+            {techStack.map((tech) => {
+              return <li key={tech}>{tech}</li>;
+            })}
           </ul>
         </div>
         <div className="about-content flex flex-col gap-3">
           <h3 className="lg:text-4xl md:text-3xl text-2xl typography-primary">
             Certificates:
           </h3>
-          <ol className="typography-secondary text-xl">
-            <li>GSAP 3 Express</li>
-            <li>
-              DTI Laguna x Google Certificate Program - Google UX Design
-              [Coursera] (July 8, 2025)
-            </li>
-            <li>UXPH Mini 2025: Manila Conference (Oct 18, 2025)</li>
-            <li>
-              The No-Code Creative : Figma for Talents and Local Business (March
-              14, 2026)
-            </li>
-          </ol>
+          <ul className="typography-secondary text-xl">
+            {certificates.toReversed().map((cert) => {
+              return <li key={cert}>{cert}</li>;
+            })}
+          </ul>
+          <h5 className="lg:text-2xl md:text-xl text-xl typography-primary">
+            Other:
+          </h5>
+          <ul className="typography-secondary text-sm">
+            {otherCertificates.toReversed().map((otherCert) => {
+              return <li key={otherCert}>{otherCert}</li>;
+            })}
+          </ul>
         </div>
         <div className="about-content flex flex-col gap-3">
           <h3 className="lg:text-4xl md:text-3xl text-2xl typography-primary">
             Links:
           </h3>
           <ul className="typography-secondary text-xl">
-            <li>
-              <a href="https://github.com/dev-zyrushiyao" target="_blank">
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://www.behance.net/zyrushiyao" target="_blank">
-                Behance
-              </a>
-            </li>
+            {links.map((link) => {
+              return (
+                <li key={link.platform}>
+                  <a href={link.address} target="_blank">
+                    {link.platform}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
         <div className="about-content flex flex-col gap-3">
@@ -80,17 +117,15 @@ const About = () => {
             Contact
           </h3>
           <ul className="typography-secondary text-lg">
-            <li>
-              <a href="mailto:zyrushiyao@gmail.com">Email</a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/zyrus-hiyao/"
-                target="_blank"
-              >
-                LinkedIn
-              </a>
-            </li>
+            {contacts.map((contact) => {
+              return (
+                <li key={contact.platform}>
+                  <a href={contact.address} target="_blank">
+                    {contact.platform}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
