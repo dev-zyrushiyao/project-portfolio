@@ -13,8 +13,8 @@ const timelineVisualizer = new ProjectModel({
     { fileName: "gsap.jpg", label: "gsap" },
   ],
   link: {
-    prototype: "https://github.com/dev-zyrushiyao/timeline-visualizer",
-    sourceCode: "https://dev-zyrushiyao.github.io/timeline-visualizer/",
+    prototype: "https://dev-zyrushiyao.github.io/timeline-visualizer/",
+    sourceCode: "https://github.com/dev-zyrushiyao/timeline-visualizer",
     documentation: undefined,
   },
 });
