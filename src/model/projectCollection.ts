@@ -8,6 +8,7 @@ import easeVisualizer from "./project-works/EaseVisualizer";
 import gsapSketchpad from "./project-works/GsapSketchpad";
 import marioClub from "./project-works/MarioClub";
 import projectPortfolio from "./project-works/ProjectPortfolio";
+import timelineVisualizer from "./project-works/TimelineVisualizer";
 import worldTime from "./project-works/WorldTime";
 import { ProjectModel } from "./projectModel";
 
@@ -24,5 +25,6 @@ projects.push(gsapSketchpad);
 projects.push(drawingApp);
 projects.push(colorClonePlayground);
 projects.push(easeVisualizer);
+projects.push(timelineVisualizer);
 
 export default projects.reverse();
