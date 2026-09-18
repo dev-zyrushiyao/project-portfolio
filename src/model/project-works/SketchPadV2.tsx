@@ -4,7 +4,7 @@ const gsapSketchPadV2 = new ProjectModel({
   title: "GSAP Sketchpad V2",
   description: "My sketchpad from CCC:Beyond The Basics Course",
   tags: ["Web", "Frontend"],
-  image: "project_gsap_sketchpad.png",
+  image: "project_gsap_sketchpad_v2.png",
   techStack: [
     { fileName: "react.png", label: "react" },
     { fileName: "typescript.png", label: "typescript" },
