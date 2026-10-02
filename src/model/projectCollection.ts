@@ -7,6 +7,7 @@ import drawingApp from "./project-works/DrawingApp";
 import easeVisualizer from "./project-works/EaseVisualizer";
 import gsapSketchpad from "./project-works/GsapSketchpad";
 import marioClub from "./project-works/MarioClub";
+import OceanScroll from "./project-works/OceanScroll";
 import projectPortfolio from "./project-works/ProjectPortfolio";
 import gsapSketchPadV2 from "./project-works/SketchPadV2";
 import timelineVisualizer from "./project-works/TimelineVisualizer";
@@ -28,5 +29,6 @@ projects.push(colorClonePlayground);
 projects.push(easeVisualizer);
 projects.push(timelineVisualizer);
 projects.push(gsapSketchPadV2);
+projects.push(OceanScroll);
 
 export default projects.reverse();
