@@ -10,6 +10,7 @@ import marioClub from "./project-works/MarioClub";
 import OceanScroll from "./project-works/OceanScroll";
 import projectPortfolio from "./project-works/ProjectPortfolio";
 import gsapSketchPadV2 from "./project-works/SketchPadV2";
+import gsapSketchPadV3 from "./project-works/SketchpadV3";
 import timelineVisualizer from "./project-works/TimelineVisualizer";
 import worldTime from "./project-works/WorldTime";
 import { ProjectModel } from "./projectModel";
@@ -30,5 +31,6 @@ projects.push(easeVisualizer);
 projects.push(timelineVisualizer);
 projects.push(gsapSketchPadV2);
 projects.push(OceanScroll);
+projects.push(gsapSketchPadV3);
 
 export default projects.reverse();
